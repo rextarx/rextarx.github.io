@@ -1,3 +1,2 @@
-# rextarx.github.io
-
-#### Hello, World
+# rextarx's page
+## Hello, World
