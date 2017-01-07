@@ -72,7 +72,7 @@ Jekyll을 사용하기 위해서는 일단 RVM부터 설치해야 한다.
 > sudo curl -sSL https://get.rvm.io | bash -s stable  --ruby
 
 설치하고나면 .bash_profile에 아래와 같이 rvm관련 코드가 추가되어 있을 것이다.  
-![](./1.png)
+![](/assets/2017-01-07-Create_Github_page_via_Jekyll/1.png)
 
 이를 아래 명령어로 재시작 해줘야한다.  
 > source ~/.bash_profile
@@ -80,25 +80,25 @@ Jekyll을 사용하기 위해서는 일단 RVM부터 설치해야 한다.
 이제 rvm이 제대로 설치되었는지 확인해보자.  
 > rvm -v  
 
-![](./2.png)
+![](https://github.com/rextarx/rextarx.github.io/blob/master/assets/2017-01-07-Create_Github_page_via_Jekyll/2.png)
 
 버전이 낮다. 2.1.1로 올려보자.
 > rvm install 2.1.1
 
-![](./3.png)  
+![](https://github.com/rextarx/rextarx.github.io/blob/master/assets/2017-01-07-Create_Github_page_via_Jekyll/3.png)  
 
 에러 발생...ㅠ_ㅠ
 
 Homebrew를 업데이트 해보자.  
 > homebrew update  
 
-![](./4.png)
+![](https://github.com/rextarx/rextarx.github.io/blob/master/assets/2017-01-07-Create_Github_page_via_Jekyll/4.png)
 
 시키는대로 권한 설정 다시 하고 업데이트...
 > sudo chown -R $USER /usr/local
 > brew update
 
-![](./5.png)  
+![](https://github.com/rextarx/rextarx.github.io/blob/master/assets/2017-01-07-Create_Github_page_via_Jekyll/5.png)  
 
 다시 돌아가서 rvm update 해보자.
 > rvm install 2.1.1  
@@ -134,11 +134,11 @@ vi종료 방법은 esc를 한번 누른 다음 :wq(파일 저장 후 종료)를 
 > bundle update  
 
 
-## 일단 Jekyll을 구동시켜 보자!
+## 일단 Jekyll을 구동시켜 보자!  
 > jekyll new . --force  
 > jekyll serve
 
-![](./6.png)  
+![](https://github.com/rextarx/rextarx.github.io/blob/master/assets/2017-01-07-Create_Github_page_via_Jekyll/6.png)  
 감격이다... 몇시간 삽질끝에 드디어 띄웠다.  
 이제 테마 적용을 해 보자.  
 
@@ -151,7 +151,7 @@ vi종료 방법은 esc를 한번 누른 다음 :wq(파일 저장 후 종료)를 
 다시 Jekyll을 실행해보자.
 > jekyll serve  
 
-![](./7.png)  
+![](https://github.com/rextarx/rextarx.github.io/blob/master/assets/2017-01-07-Create_Github_page_via_Jekyll/7.png)  
 적용이 됐다!!  
 
 ## GitHub에 Push하기  
@@ -185,7 +185,7 @@ Gemfile 생성부터 다시~
 > git push origin master
 
 자, 완성!  
-![](./8.png)
+![](https://github.com/rextarx/rextarx.github.io/blob/master/assets/2017-01-07-Create_Github_page_via_Jekyll/8.png)
 
 
 ## 첫 포스팅 작성
@@ -202,7 +202,7 @@ Jekyll에서는 _posts에 Markdown 파일을 넣으면 자동으로 정적페이
 | tags | 카테고리와 유사하게, 하나 이상의 태그를 포스트에 추가할 수 있다. 또 카테고리와 동일하게, YAML 리스트 또는 쉼표로 구분된 문자열로 지정할 수도 있다. |
 
 본 글은 아래와 같이 작성했다.  
-```
+```text
 ---
 layout: post
 title:  "macOS에서 Jekyll을 사용하여 GitHub Pages 만들기"
