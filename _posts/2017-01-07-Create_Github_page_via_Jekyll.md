@@ -31,7 +31,7 @@ git config --global user.email "{email}"
 ex> git config --global user.name "Gyu"  
 ex> git config --global user.email "rextarx@gmail.com"  
 ```
-
+ 
 이제 해당 폴더에 들어있는 README.md 파일을 수정하여 Push 해보자.  
 일단 README.md 파일을 열어서 아래와 같이 수정한다.
 
@@ -50,14 +50,14 @@ git commit -m "first commit"
 
 대충 이렇게 찍히면 된다.
 
-```git
+```log
 [master 39b8331] Change README
 1 file changed, 2 insertions(+), 3 deletions(-)
 ```
 
 > git push -u origin master  
 
-```git
+```log
 Counting objects: 3, done.
 Writing objects: 100% (3/3), 278 bytes | 0 bytes/s, done.
 Total 3 (delta 0), reused 0 (delta 0)
@@ -68,14 +68,17 @@ Branch master set up to track remote branch master from origin.
 
 만약 아래와 같은 에러가 떴다면 SSH 접속 관련 설정을 찾아보자. 회사에서 방화벽을 막았다던가...  
 
-```git
+```log
 fatal: unable to access 'https://github.com/rextarx/rextarx.github.io.git/': Server aborted the SSL handshake
 ```
 
 자, 이제 해당 페이지로 이동해보자.  
 
+```terminal
 > {username}.github.io  
+
 > ex> rextarx.github.io  
+```
 
 아래와 같이 제대로 표시되고 있다.  
 
