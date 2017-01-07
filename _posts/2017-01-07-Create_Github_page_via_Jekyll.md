@@ -101,38 +101,48 @@ sudo curl -sSL https://get.rvm.io | bash -s stable  --ruby
 
 이를 아래 명령어로 재시작 해줘야한다.  
 
-> source ~/.bash_profile
+```terminal
+source ~/.bash_profile
+```
 
 이제 rvm이 제대로 설치되었는지 확인해보자.  
 
-> rvm -v  
+```terminal
+rvm -v  
+```
 
 ![](/assets/2017-01-07-Create_Github_page_via_Jekyll/2.png)
 
 버전이 낮다. 2.1.1로 올려보자.
 
-> rvm install 2.1.1
+```terminal
+rvm install 2.1.1
+```
 
 ![](/assets/2017-01-07-Create_Github_page_via_Jekyll/3.png)  
 
-에러 발생...ㅠ_ㅠ
+에러 발생...ㅠ_ㅠ Homebrew를 업데이트 해보자.  
 
-Homebrew를 업데이트 해보자.  
-
-> homebrew update  
+```terminal
+homebrew update  
+```
 
 ![](/assets/2017-01-07-Create_Github_page_via_Jekyll/4.png)
 
 시키는대로 권한 설정 다시 하고 업데이트...  
 
-> sudo chown -R $USER /usr/local
-> brew update
+```terminal
+sudo chown -R $USER /usr/local
+brew update
+```
 
 ![](/assets/2017-01-07-Create_Github_page_via_Jekyll/5.png)  
 
 다시 돌아가서 rvm update 해보자.  
 
-> rvm install 2.1.1  
+```terminal
+rvm install 2.1.1  
+```
 
 잘된다! 로그를 보니 brew update...관련 로그도 있는 걸로 봐서..그냥 위에서 /usr/local 설정만 바꿔도 될 것 같기만 하다.  
 설치까지는 시간이 조금 걸린다.  
@@ -143,9 +153,11 @@ Homebrew를 업데이트 해보자.
 아래 명령어를 이용해서 Gemfile을 생성해보자.  
 jekyll 버전은 [Gem](https://rubygems.org/search?page=9&query=jekyll&utf8=%E2%9C%93)에서 확인해서 해당 버전을 적으면 된다.  
 
-> vi Gemfile  
+```terminal
+vi Gemfile  
+```
 
-```git
+```text
 -------------------------------
 source 'https://rubygems.org'
 
@@ -157,22 +169,30 @@ gem 'jekyll', '3.1.6'
 vi종료 방법은 esc를 한번 누른 다음 :wq(파일 저장 후 종료)를 입력해주면 된다.  
 설정한 gem을 실행해보자.  
 
-> bundle install
+```terminal
+bundle install
+```
 
 만약 bundle 명령어가 먹히지 않는다면 깔아준 다음 다시 실행하자.  
 
-> gem install bundler  
-> bundle install  
+```terminal
+gem install bundler  
+bundle install  
+```
 
 혹시 모르니 bundle update도 한번...
 
-> bundle update  
+```terminal
+bundle update  
+```
 
 
 ## 일단 Jekyll을 구동시켜 보자!  
 
-> jekyll new . --force  
-> jekyll serve
+```terminal
+jekyll new . --force  
+jekyll serve
+```
 
 ![](/assets/2017-01-07-Create_Github_page_via_Jekyll/6.png)  
 
@@ -188,7 +208,9 @@ vi종료 방법은 esc를 한번 누른 다음 :wq(파일 저장 후 종료)를 
 
 다시 Jekyll을 실행해보자.
 
-> jekyll serve  
+```terminal
+jekyll serve  
+```
 
 ![](/assets/2017-01-07-Create_Github_page_via_Jekyll/7.png)  
 
@@ -197,10 +219,12 @@ vi종료 방법은 esc를 한번 누른 다음 :wq(파일 저장 후 종료)를 
 ## GitHub에 Push하기  
 자, 이제 올려보자.  
 
-> git add *  
-> git commit -m "Adjust Jekyll"  
-> git remote set-url origin https://github.com/rextarx/rextarx.github.io.git  
-> git push origin master
+```terminal
+git add *  
+git commit -m "Adjust Jekyll"  
+git remote set-url origin https://github.com/rextarx/rextarx.github.io.git  
+git push origin master
+```
 
 ## 혹시 아래와 같은 에러가 발생한다면??
 ```mail
@@ -218,14 +242,15 @@ If you have any questions you can contact us by replying to this email.
 그러면 jekyll 버전을 3.1.6으로 내려서 다시 해보자.  
 Gemfile 생성부터 다시~  
 
-> sudo gem uninstall jekyll  
-> sudo gem install jekyll:3.1.6
-> jekyll new . --force  
-> jekyll serve  
-> git add *
-> git commit -m "Adjust Jekyll"  
-> git remote set-url origin https://github.com/rextarx/rextarx.github.io.git  
-> git push origin master
+```terminal
+sudo gem uninstall jekyll  
+sudo gem install jekyll:3.1.6
+jekyll new . --force  
+jekyll serve  
+git add *
+git commit -m "Adjust Jekyll"  
+git remote set-url origin https://github.com/rextarx/rextarx.github.io.git  
+git push origin master
 
 자, 완성!  
 
@@ -248,7 +273,7 @@ Jekyll에서는 _posts에 Markdown 파일을 넣으면 자동으로 정적페이
 
 본 글은 아래와 같이 작성했다.  
 
-```
+```text
 ---
 layout: post
 title:  "macOS에서 Jekyll을 사용하여 GitHub Pages 만들기"
