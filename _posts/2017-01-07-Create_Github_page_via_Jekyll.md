@@ -55,7 +55,9 @@ git commit -m "first commit"
 1 file changed, 2 insertions(+), 3 deletions(-)
 ```
 
-> git push -u origin master  
+```terminal
+git push -u origin master  
+```
 
 ```log
 Counting objects: 3, done.
@@ -75,9 +77,9 @@ fatal: unable to access 'https://github.com/rextarx/rextarx.github.io.git/': Ser
 자, 이제 해당 페이지로 이동해보자.  
 
 ```terminal
-> {username}.github.io  
+{username}.github.io  
 
-> ex> rextarx.github.io  
+ex> rextarx.github.io  
 ```
 
 아래와 같이 제대로 표시되고 있다.  
