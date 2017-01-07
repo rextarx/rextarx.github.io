@@ -2,7 +2,7 @@
 layout: post
 title:  "macOS에서 Jekyll을 사용하여 GitHub Pages 만들기"
 date:   2017-01-07 23:11:39 +0900
-categories: Development
+category: Development
 ---
  
 블로그를 개설하려고 생각만 했었다.  
@@ -99,7 +99,7 @@ sudo curl -sSL https://get.rvm.io | bash -s stable  --ruby
 
 설치하고나면 .bash_profile에 아래와 같이 rvm관련 코드가 추가되어 있을 것이다.  
 
-![](/assets/2017-01-07-Create_Github_page_via_Jekyll/1.png)
+![]({{site.baseurl}}/assets/2017-01-07-Create_Github_page_via_Jekyll/1.png)
 
 이를 아래 명령어로 재시작 해줘야한다.  
 
@@ -113,7 +113,7 @@ source ~/.bash_profile
 rvm -v  
 ```
 
-![](/assets/2017-01-07-Create_Github_page_via_Jekyll/2.png)
+![]({{site.baseurl}}/assets/2017-01-07-Create_Github_page_via_Jekyll/2.png)
 
 버전이 낮다. 2.1.1로 올려보자.
 
@@ -121,7 +121,7 @@ rvm -v
 rvm install 2.1.1
 ```
 
-![](/assets/2017-01-07-Create_Github_page_via_Jekyll/3.png)  
+![]({{site.baseurl}}/assets/2017-01-07-Create_Github_page_via_Jekyll/3.png)  
 
 에러 발생...ㅠ_ㅠ Homebrew를 업데이트 해보자.  
 
@@ -129,7 +129,7 @@ rvm install 2.1.1
 homebrew update  
 ```
 
-![](/assets/2017-01-07-Create_Github_page_via_Jekyll/4.png)
+![]({{site.baseurl}}/assets/2017-01-07-Create_Github_page_via_Jekyll/4.png)
 
 시키는대로 권한 설정 다시 하고 업데이트...  
 
@@ -138,7 +138,7 @@ sudo chown -R $USER /usr/local
 brew update
 ```
 
-![](/assets/2017-01-07-Create_Github_page_via_Jekyll/5.png)  
+![]({{site.baseurl}}/assets/2017-01-07-Create_Github_page_via_Jekyll/5.png)  
 
 다시 돌아가서 rvm update 해보자.  
 
@@ -196,7 +196,7 @@ jekyll new . --force
 jekyll serve
 ```
 
-![](/assets/2017-01-07-Create_Github_page_via_Jekyll/6.png)  
+![]({{site.baseurl}}/assets/2017-01-07-Create_Github_page_via_Jekyll/6.png)  
 
 감격이다... 몇시간 삽질끝에 드디어 띄웠다.  
 이제 테마 적용을 해 보자.  
@@ -214,7 +214,7 @@ jekyll serve
 jekyll serve  
 ```
 
-![](/assets/2017-01-07-Create_Github_page_via_Jekyll/7.png)  
+![]({{site.baseurl}}/assets/2017-01-07-Create_Github_page_via_Jekyll/7.png)  
 
 적용이 됐다!!  
 
@@ -257,7 +257,7 @@ git push origin master
 
 자, 완성!  
 
-![](/assets/2017-01-07-Create_Github_page_via_Jekyll/8.png)
+![]({{site.baseurl}}/assets/2017-01-07-Create_Github_page_via_Jekyll/8.png)
 
 
 ## 첫 포스팅 작성
