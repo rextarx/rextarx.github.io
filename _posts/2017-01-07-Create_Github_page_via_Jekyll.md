@@ -253,6 +253,7 @@ git add *
 git commit -m "Adjust Jekyll"  
 git remote set-url origin https://github.com/rextarx/rextarx.github.io.git  
 git push origin master
+```
 
 자, 완성!  
 
