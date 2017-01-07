@@ -6,7 +6,7 @@ categories: Development
 ---
 
 # macOS에서 Jekyll을 사용하여 GitHub Pages 만들기
-
+ 
 블로그를 개설하려고 생각만 했었다. T사... N사.. 많은 블로그가 있었지만, 그냥 GitHub에 살림을 차리기로 했다.
 
 ## GitHub 가입 & Repository 생성
