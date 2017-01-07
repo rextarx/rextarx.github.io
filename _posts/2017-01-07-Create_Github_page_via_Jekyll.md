@@ -4,8 +4,6 @@ title:  "macOS에서 Jekyll을 사용하여 GitHub Pages 만들기"
 date:   2017-01-07 23:11:39 +0900
 categories: Development
 ---
-
-# macOS에서 Jekyll을 사용하여 GitHub Pages 만들기
  
 블로그를 개설하려고 생각만 했었다.  
 T사... N사.. 많은 블로그가 있었지만, 그냥 GitHub에 살림을 차리기로 했다.
@@ -17,14 +15,22 @@ Repository name에 {username}.github.io라고 적으면 된다.
 
 ## GitHub에 Push 하기
 repository를 생성 한 후에는 해당 공간에 파일을 Push 해야 하는데 그러기 위해서는 Local로 Git source를 Clone해야 한다.  
-> git clone https://github.com/{username}/{username}.github.io  
-> ex> git clone https://github.com/rextarx/rextarx.github.io
+
+```terminal
+git clone https://github.com/{username}/{username}.github.io  
+
+ex> git clone https://github.com/rextarx/rextarx.github.io
+```
 
 그 전에, 만약 Git profile에 Name과 email 설정을 하지 않았다면 아래와 같이 설정하자.  
-> git config --global user.name "{username}"  
-> ex> git config --global user.name "Gyu"  
-> git config --global user.email "{email}"  
-> ex> git config --global user.email "rextarx@gmail.com"  
+
+```terminal
+git config --global user.name "{username}"  
+git config --global user.email "{email}"  
+
+ex> git config --global user.name "Gyu"  
+ex> git config --global user.email "rextarx@gmail.com"  
+```
 
 이제 해당 폴더에 들어있는 README.md 파일을 수정하여 Push 해보자.  
 일단 README.md 파일을 열어서 아래와 같이 수정한다.
@@ -35,13 +41,16 @@ Hello, World
 ```
 
 그리고 터미널에 아래와 같이 작성한다.  
-> git init  
-> git add README.md  
-> git commit -m "first commit"  
+
+```terminal
+git init  
+git add README.md  
+git commit -m "first commit"  
+```
 
 대충 이렇게 찍히면 된다.
 
-```
+```git
 [master 39b8331] Change README
 1 file changed, 2 insertions(+), 3 deletions(-)
 ```
@@ -66,19 +75,22 @@ fatal: unable to access 'https://github.com/rextarx/rextarx.github.io.git/': Ser
 자, 이제 해당 페이지로 이동해보자.  
 
 > {username}.github.io  
+> ex> rextarx.github.io  
 
 아래와 같이 제대로 표시되고 있다.  
 
 ## Jekyll 설치  
 Jekyll은 정적 블로그 웹사이트를 만들어주는 툴이다.  
 
-> Jekyll 은 아주 심플하고 블로그 지향적인 정적 사이트 생성기입니다. Jekyll 은 다양한 포맷의 원본 텍스트 파일을 템플릿 디렉토리로부터 읽어서, (Markdown 등의) 변환기와 Liquid 렌더러를 통해 가공하여, 당신이 즐겨 사용하는 웹 서버에 곧바로 게시할 수 있는, 완성된 정적 웹사이트를 만들어냅니다. 그리고 Jekyll 은 GitHub Pages 의 내부 엔진이기도 합니다. 다시 말해, Jekyll 을 사용하면 자신의 프로젝트 페이지나 블로그, 웹사이트를 무료로 GitHub 에 호스팅 할 수 있다는 뜻입니다.
+> Jekyll 은 아주 심플하고 블로그 지향적인 정적 사이트 생성기입니다. Jekyll 은 다양한 포맷의 원본 텍스트 파일을 템플릿 디렉토리로부터 읽어서, (Markdown 등의) 변환기와 Liquid 렌더러를 통해 가공하여, 당신이 즐겨 사용하는 웹 서버에 곧바로 게시할 수 있는, 완성된 정적 웹사이트를 만들어냅니다. 그리고 Jekyll 은 GitHub Pages 의 내부 엔진이기도 합니다. 다시 말해, Jekyll 을 사용하면 자신의 프로젝트 페이지나 블로그, 웹사이트를 무료로 GitHub 에 호스팅 할 수 있다는 뜻입니다.  
 ([정식 사이트에서 발췌](http://jekyllrb-ko.github.io/docs/home/))
 
 
 Jekyll을 사용하기 위해서는 일단 RVM부터 설치해야 한다.  
 
-> sudo curl -sSL https://get.rvm.io | bash -s stable  --ruby  
+```terminal
+sudo curl -sSL https://get.rvm.io | bash -s stable  --ruby  
+```
 
 설치하고나면 .bash_profile에 아래와 같이 rvm관련 코드가 추가되어 있을 것이다.  
 
