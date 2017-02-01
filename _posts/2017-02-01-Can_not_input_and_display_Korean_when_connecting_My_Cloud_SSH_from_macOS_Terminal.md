@@ -19,7 +19,7 @@ Mac Terminal로 SSH 접속을 합니다.
 ```Terminal
 ssh {id}@{MyCloud ip}  
 ex> ssh root@192.168.0.6
-```Terminal
+```
 
 아래 명령어로 bashrc을 열어줍니다.  
 
