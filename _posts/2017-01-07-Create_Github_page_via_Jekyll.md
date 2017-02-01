@@ -2,7 +2,7 @@
 layout: post
 title:  "macOS에서 Jekyll을 사용하여 GitHub Pages 만들기"
 date:   2017-01-07 23:11:39 +0900
-category: Development
+category: macOS
 ---
  
 블로그를 개설하려고 생각만 했었다.  

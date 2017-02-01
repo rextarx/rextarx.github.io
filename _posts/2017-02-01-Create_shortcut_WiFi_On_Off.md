@@ -2,7 +2,7 @@
 layout: post
 title:  "macOS에서 WiFi On/Off 단축키 만들기"
 date:   2017-02-01 17:00:00 +0900
-category: Development
+category: macOS
 ---
 
 ## macOS에서 WiFi On/Off 단축키 만들기
