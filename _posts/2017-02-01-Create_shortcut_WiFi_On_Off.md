@@ -52,7 +52,7 @@ Automator를 실행해서 **서비스**를 선택하자.
 ![]({{site.baseurl}}/assets/2017-02-01-Create_shortcut_WiFi_On_Off/6.png)  
 
 Cmd+S를 눌러 해당 Workflow를 저장하자.  
-**/Users/{{username}}/Library/Services**에 저장된다.  
+**/Users/{username}/Library/Services**에 저장된다.  
 
 ![]({{site.baseurl}}/assets/2017-02-01-Create_shortcut_WiFi_On_Off/7.png)  
 
