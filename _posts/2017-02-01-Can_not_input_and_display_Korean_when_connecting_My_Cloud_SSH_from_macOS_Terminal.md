@@ -15,12 +15,14 @@ MyColud는 기본적으로 한글 지원을 하지 않습니다... 아래와 같
 
 ## MyCloud 언어 설정
 Mac Terminal로 SSH 접속을 합니다.  
+
 ```Terminal
 ssh {id}@{MyCloud ip}  
 ex> ssh root@192.168.0.6
 ```Terminal
 
 아래 명령어로 bashrc을 열어줍니다.  
+
 ```Terminal
 nano ~/.bashrc  
 ```
@@ -37,12 +39,14 @@ source ~/.bashrc
 ```
 
 이제 이렇게 하면 아래와 같이 한글이 제대로 표시가 됩니다.  
+
 ![]({{site.baseurl}}/assets/2017-02-01-Can_not_input_and_display_Korean_when_connecting_My_Cloud_SSH_from_macOS_Terminal/3.png)  
 
 하지만, 여전히 한글 입력은 되지 않습니다....  
 
 ## 한글 입력
-아래 명령으로 inputrc 파일을 엽니다.
+아래 명령으로 inputrc 파일을 엽니다.  
+
 ```Terminal
 nano /etc/inputrc  
 ```
