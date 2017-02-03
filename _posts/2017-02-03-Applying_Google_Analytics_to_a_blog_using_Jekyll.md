@@ -45,7 +45,7 @@ _config.yml 파일이 없다면, _includes폴더 아래에 analytics.html 파일
  </script>
 ```
 
-그리고 default.html 파일을 찾아서 아래 스크린샷과 같이 analytics.html 파일이 실행되도록 `{% include analytics.html %}`를 추가해주자.  
+그리고 default.html 파일을 찾아서 아래 스크린샷과 같이 analytics.html 파일이 실행되도록 anaytics.html 추가 코드를 넣어주자.  
 
 ![]({{site.baseurl}}/assets/2017-02-03-Applying_Google_Analytics_to_a_blog_using_Jekyll/6.png)  
 
