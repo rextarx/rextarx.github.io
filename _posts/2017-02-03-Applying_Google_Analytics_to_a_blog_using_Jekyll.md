@@ -50,6 +50,7 @@ _config.yml 파일이 없다면, _includes폴더 아래에 analytics.html 파일
 ![]({{site.baseurl}}/assets/2017-02-03-Applying_Google_Analytics_to_a_blog_using_Jekyll/6.png)  
 
 적용을 모두 마친 후, 수정 사항을 모두 Push하고 스마트폰이나 기타 다른 Device에서 접근을 하고 GA에서 확인해보자.  
-확인은 **실시간** 메뉴에서 해야 한다. ~~대시보드에서도 실시간으로 취합되는 줄 알고 삽질한 건 안자랑~~  
+확인은 **실시간** 메뉴에서 해야 한다.  
+~~대시보드에서도 실시간으로 취합되는 줄 알고 삽질한 건 안자랑~~  
 
 ![]({{site.baseurl}}/assets/2017-02-03-Applying_Google_Analytics_to_a_blog_using_Jekyll/7.png)  
