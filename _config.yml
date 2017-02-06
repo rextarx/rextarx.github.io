@@ -10,11 +10,11 @@ url: "https://rextarx.github.io"
 baseurl: ""
 header-img: img/home-bg.jpg
 headercolor: "#FFFFFF"
-logo: /img/logos/Project-Pages-New-Logo-Inverted.png
+# logo: /img/logos/Project-Pages-New-Logo-Inverted.png
 
 # Tertiary Parameters
 github_username:  rextarx
-project_repository: rextarx
+project_repository: 
 disqus_shortname: rextarx
 g-analytics: UA-91308413-1
 altmetric: true
@@ -36,6 +36,7 @@ defaults:
       type: "pages"
     values:
       layout: "project"
+      author: "rextarx"
       header-img: "img/home-bg.jpg"
 
 # Prose Settings
