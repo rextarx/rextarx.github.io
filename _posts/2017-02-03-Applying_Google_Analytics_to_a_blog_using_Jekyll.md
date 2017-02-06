@@ -2,7 +2,7 @@
 layout: post
 title:  "Jekyll을 사용한 blog에 Google Analytics 적용하기"
 date:   2017-02-03 10:29:00 +0900
-categories: [Development, Jekyll]
+category: Jekyll
 ---
 
 ## Jekyll을 사용한 blog에 Google Analytics 적용하기
