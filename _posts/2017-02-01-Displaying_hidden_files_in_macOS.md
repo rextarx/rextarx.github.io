@@ -2,7 +2,7 @@
 layout: post
 title:  "macOS에서 숨김파일 표시하기"
 date:   2017-02-01 23:36:00 +0900
-categories: macOS
+category: macOS
 ---
 
 ## macOS에서 숨김파일 표시하기
