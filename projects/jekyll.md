@@ -1,7 +1,7 @@
 ---
 layout: project
-title: "jekyll"
-description: "jekyll"
+title: "Jekyll"
+description: "How to use Jekyll"
 header-img: "img/home-bg.jpg"
-category: jekyll
+category: Jekyll
 ---
