@@ -3,9 +3,6 @@ title: REXTARX
 description: "An Integrated Programming Blog"
 url: "https://rextarx.github.io"
 
-
-
-
 # Secondary Parameters
 baseurl: ""
 header-img: img/home-bg.jpg
@@ -58,6 +55,11 @@ prose:
           label: "Description"
           value: ""
       - name: "category"
+        field:
+          element: "text"
+          label: "Project"
+          value: ""           
+      - name: "categories"
         field:
           element: "text"
           label: "Project"

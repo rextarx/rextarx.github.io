@@ -2,7 +2,7 @@
 layout: post
 title:  "macOS Terminal에서 MyCloud SSH 접속시 한글 입력/표시 안되는 문제"
 date:   2017-02-01 23:38:00 +0900
-categories: macOS
+category: macOS
 ---
 
 ## macOS Terminal에서 MyCloud SSH 접속시 한글 입력/표시 안되는 문제
